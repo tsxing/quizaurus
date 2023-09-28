@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="flashcard.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Write | Quizaurus</title>
+
+   <!-- font urbanist-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
+
+  
+</head>
+<body>
+
+  <main>
+    
+    <header>
+      <div class="container">
+        <div id="header">
+          <br>
+          <a style="text-decoration: none; color: black" href="index.html"><h1>Write | Quizaurus</h1></a>
+          <p>Add or delete card. Saves locally- reloading won't lose your data!</p><br>
+          <div>
+            <a href="index.html"><button id="home">Home </button></a>
+            <a href="write.html"><button id="write_feature">Reload </button></a>
+            <button id="submit_ans" onClick="submit_ans()">Submit</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div style="display: none; justify-content: space-around; padding: 15px 15px;" id="form">
+      <p style="font-size: 18px" id="show_word">Temp Word </p>
+      <input style="font-size: 18px; font-family: 'Urbanist', sans-serif; padding: 14px 16px;"id="write_def" placeholder="Write definition" autocomplete="off">
+    </div>
+    <p style="padding: 15px;" id="score"></p>
+    
+    
+   
+   
+  
+  <script src="write.js"></script>
+</body>
+</html>
